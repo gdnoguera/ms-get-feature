@@ -12,7 +12,7 @@ const { check, validationResult } = require('express-validator');
    * @param {number} interest interes que se realiza el cálculo del plan de pagos
    * @param {number} iva iva que se le va a aplicar al calculo del plan de pagos
    * @param {number} balanceDefer Saldo a diferir total con el que se realiza el cálculo del plan de pagos
-   * @param {number} fixedfee cuota fija con el que se realiza el cálculo del plan de pagos
+   * @param {number} fixedfee cuota fijacon el que se realiza el cálculo del plan de pagos
    * @return {json} json con el plan de pagos generado
 */
 app.get(`/${service}/:numberQuotas/:interest/:iva/:balanceDefer/:fixedfee`, [
